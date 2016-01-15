@@ -82,6 +82,7 @@
     <Compile Include="Roundup.xaml.cs">
       <DependentUpon>Roundup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Services\SerialService.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Page Include="MainWindow.xaml">

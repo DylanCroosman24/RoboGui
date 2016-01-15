@@ -1,5 +1,6 @@
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
+using RoboGui.Services;
 using System.Windows;
 using System.Windows.Input;
 
@@ -43,6 +44,7 @@ namespace RoboGUI.ViewModel
         private void ForwardChangeTextExecute()
         {
             DirectionText = "Forward";
+            var serialService = new SerialService();
         }
 
         public ICommand ReverseChangeText { get; private set; }

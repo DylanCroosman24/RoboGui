@@ -349,7 +349,7 @@
         <Grid Grid.Column="2" Margin="10,27.417,27.25,-33.084" Grid.Row="1">
             <Button x:Name="button" Content="Round" Style="{DynamicResource Star}" Margin="24.667,-30,-24.667,30"/>
         </Grid>
-        <Button x:Name="button1" Content="Forward" Margin="0,0.5,-36.083,0" Grid.Row="1" Style="{DynamicResource Star}" HorizontalAlignment="Right" Width="84.667"/>
+        <Button x:Name="button1" Content="Forward" Margin="0,0.5,-36.083,0" Grid.Row="1" Command="{Binding ForwardChangeText}" Style="{DynamicResource Star}" HorizontalAlignment="Right" Width="84.667"/>
         <Button x:Name="button2" Content="Upward&#xD;&#xA;" Grid.Column="1" Margin="0,35.667,10,31.667" Grid.RowSpan="2" Style="{DynamicResource ButtonStyle1}" HorizontalAlignment="Right" Width="43.332" Foreground="#FFF7CE17" Background="White"/>
         <Button x:Name="button1_Copy" Content="Star" Margin="0,-17.833,-36.083,30.333" Grid.Row="3" Style="{DynamicResource Star}" HorizontalAlignment="Right" Width="84.667" Grid.RowSpan="2"/>
         <Button x:Name="button1_Copy1" Content="Reverse" Margin="34.583,-17.833,10,30.333" Grid.Row="3" Style="{DynamicResource Star}" Grid.Column="2" Grid.RowSpan="2"/>
