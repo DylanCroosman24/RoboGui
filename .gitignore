@@ -1,0 +1,8 @@
+*.exe
+bin/Debug/RoboGui.exe
+*.baml
+obj/Debug/GeneratedInternalTypeHelper.g.cs
+obj/Debug/MainWindow.g.cs
+obj/Debug/RoboGui.csproj.FileListAbsolute.txt
+*.pdb
+obj/Debug/GeneratedInternalTypeHelper.g.cs
