@@ -29,8 +29,8 @@ namespace RoboGui.Services
             _serialPort.Handshake = SetPortHandshake(_serialPort.Handshake);
 
             // Set the read/write timeouts
-            _serialPort.ReadTimeout = 500;
-            _serialPort.WriteTimeout = 500;
+            //_serialPort.ReadTimeout = 2000;
+            //_serialPort.WriteTimeout = 2000;
 
             _serialPort.Open();
             _continue = true;
@@ -55,6 +55,7 @@ namespace RoboGui.Services
                     _serialPort.WriteLine(
                         String.Format("<{0}>: {1}", name, message));
                 }
+                System.Threading.Thread.Sleep(100);
             }
 
             readThread.Join();
