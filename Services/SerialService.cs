@@ -39,13 +39,14 @@ namespace RoboGui.Services
             readThread.Start();
 
             Console.Write("Name: ");
-            name = Console.ReadLine();
+            name = "Earthling";
 
-            Console.WriteLine("Type QUIT to exit");
+            //Console.WriteLine("Type QUIT to exit");
 
             while (_continue)
             {
-                message = Console.ReadLine();
+                //message = Console.ReadLine();
+                message = "Earth to RoboGui";
 
                 if (stringComparer.Equals("quit", message))
                 {
@@ -100,8 +101,7 @@ namespace RoboGui.Services
                 Console.WriteLine("   {0}", s);
             }
 
-            Console.Write("Enter COM port value (Default: {0}): ", defaultPortName);
-            portName = Console.ReadLine();
+            portName = "COM11";
 
             if (portName == "" || !(portName.ToLower()).StartsWith("com"))
             {
@@ -114,8 +114,7 @@ namespace RoboGui.Services
         {
             string baudRate;
 
-            Console.Write("Baud Rate(default:{0}): ", defaultPortBaudRate);
-            baudRate = Console.ReadLine();
+            baudRate = defaultPortBaudRate.ToString();
 
             if (baudRate == "")
             {
@@ -130,14 +129,12 @@ namespace RoboGui.Services
         {
             string parity;
 
-            Console.WriteLine("Available Parity options:");
             foreach (string s in Enum.GetNames(typeof(Parity)))
             {
                 Console.WriteLine("   {0}", s);
             }
 
-            Console.Write("Enter Parity value (Default: {0}):", defaultPortParity.ToString(), true);
-            parity = Console.ReadLine();
+            parity = defaultPortParity.ToString();
 
             if (parity == "")
             {
@@ -151,8 +148,7 @@ namespace RoboGui.Services
         {
             string dataBits;
 
-            Console.Write("Enter DataBits value (Default: {0}): ", defaultPortDataBits);
-            dataBits = Console.ReadLine();
+            dataBits = defaultPortDataBits.ToString();
 
             if (dataBits == "")
             {
@@ -167,15 +163,12 @@ namespace RoboGui.Services
         {
             string stopBits;
 
-            Console.WriteLine("Available StopBits options:");
             foreach (string s in Enum.GetNames(typeof(StopBits)))
             {
                 Console.WriteLine("   {0}", s);
             }
 
-            Console.Write("Enter StopBits value (None is not supported and \n" +
-             "raises an ArgumentOutOfRangeException. \n (Default: {0}):", defaultPortStopBits.ToString());
-            stopBits = Console.ReadLine();
+            stopBits = defaultPortStopBits.ToString();
 
             if (stopBits == "")
             {
@@ -188,14 +181,12 @@ namespace RoboGui.Services
         {
             string handshake;
 
-            Console.WriteLine("Available Handshake options:");
             foreach (string s in Enum.GetNames(typeof(Handshake)))
             {
                 Console.WriteLine("   {0}", s);
             }
 
-            Console.Write("End Handshake value (Default: {0}):", defaultPortHandshake.ToString());
-            handshake = Console.ReadLine();
+            handshake = defaultPortHandshake.ToString();
 
             if (handshake == "")
             {

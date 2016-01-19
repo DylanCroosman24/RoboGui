@@ -80,14 +80,6 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\Microsoft.
 C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\Microsoft.Expression.Effects.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\Microsoft.Expression.Interactions.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\System.Windows.Interactivity.dll
-C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\GalaSoft.MvvmLight.pdb
-C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\GalaSoft.MvvmLight.xml
-C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
-C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\GalaSoft.MvvmLight.Extras.xml
-C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
-C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\GalaSoft.MvvmLight.Platform.xml
-C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
-C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\de\Microsoft.Expression.Controls.resources.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\es\Microsoft.Expression.Controls.resources.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\fr\Microsoft.Expression.Controls.resources.dll
