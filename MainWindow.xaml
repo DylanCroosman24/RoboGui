@@ -80,6 +80,250 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualStateGroup.Transitions>
+                                        <VisualTransition From="MouseOver" GeneratedDuration="0" To="Normal"/>
+                                        <VisualTransition From="Pressed" GeneratedDuration="0" To="Normal"/>
+                                    </VisualStateGroup.Transitions>
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.992"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.074"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.041"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ed:BlockArrow x:Name="blockArrow" Orientation="Up" Stroke="Black">
+                                <ed:BlockArrow.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="Black" Offset="0.169"/>
+                                        <GradientStop Color="#FF1E14FB" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </ed:BlockArrow.Fill>
+                            </ed:BlockArrow>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RenderTransformOrigin="0.5,0.5"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyle2" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualStateGroup.Transitions>
+                                        <VisualTransition From="MouseOver" GeneratedDuration="0:0:0.5" To="Normal"/>
+                                        <VisualTransition From="Pressed" GeneratedDuration="0:0:0.5" To="Normal"/>
+                                    </VisualStateGroup.Transitions>
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.897"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.099"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.012"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ed:BlockArrow x:Name="blockArrow" Orientation="Left" Stroke="Black">
+                                <ed:BlockArrow.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="Black" Offset="0.793"/>
+                                        <GradientStop Color="#FFFBBC14" Offset="0.128"/>
+                                    </LinearGradientBrush>
+                                </ed:BlockArrow.Fill>
+                            </ed:BlockArrow>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyle3" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualStateGroup.Transitions>
+                                        <VisualTransition From="MouseOver" GeneratedDuration="0:0:0.5" To="Normal"/>
+                                        <VisualTransition From="Pressed" GeneratedDuration="0:0:0.5" To="Normal"/>
+                                        <VisualTransition GeneratedDuration="0:0:0.5" To="Normal"/>
+                                    </VisualStateGroup.Transitions>
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.124"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.975"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ed:BlockArrow x:Name="blockArrow" Orientation="Down" Stroke="Black">
+                                <ed:BlockArrow.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="Black" Offset="0.566"/>
+                                        <GradientStop Color="White" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </ed:BlockArrow.Fill>
+                            </ed:BlockArrow>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyle4" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualStateGroup.Transitions>
+                                        <VisualTransition From="MouseOver" GeneratedDuration="0:0:0.5" To="Normal"/>
+                                        <VisualTransition From="Pressed" GeneratedDuration="0:0:0.5" To="Normal"/>
+                                        <VisualTransition GeneratedDuration="0:0:0.5" To="Normal">
+                                            <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="blockArrow">
+                                                    <EasingDoubleKeyFrame KeyTime="0" Value="1.045"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="blockArrow">
+                                                    <EasingDoubleKeyFrame KeyTime="0" Value="1.158"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="blockArrow">
+                                                    <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="blockArrow">
+                                                    <EasingDoubleKeyFrame KeyTime="0" Value="2.333"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualTransition>
+                                    </VisualStateGroup.Transitions>
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.988"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.05"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="blockArrow">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.471"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ed:BlockArrow x:Name="blockArrow" Orientation="Right" Stroke="Black" RenderTransformOrigin="0.5,0.5">
+                                <ed:BlockArrow.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </ed:BlockArrow.RenderTransform>
+                                <ed:BlockArrow.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="Black"/>
+                                        <GradientStop Color="White" Offset="1"/>
+                                        <GradientStop Color="#FF6AF00D" Offset="0.343"/>
+                                    </LinearGradientBrush>
+                                </ed:BlockArrow.Fill>
+                            </ed:BlockArrow>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
 
     <Window.DataContext>
@@ -100,6 +344,7 @@
             <RowDefinition Height="80*" />
         </Grid.RowDefinitions>
         <TextBox Grid.Column="0" Grid.Row="2" 
+        <TextBox Grid.Column="1" 
 			Text="{Binding DirectionText, Mode=TwoWay}"
 			Margin="10"
 			HorizontalAlignment="Center"
@@ -108,7 +353,24 @@
 			Width="80"/>
         <Grid Grid.Column="2" Margin="-45.168,24,0,-29.667" Grid.Row="1" HorizontalAlignment="Left" Width="92">
             <Button x:Name="button" Content="Button" Style="{DynamicResource Star}"/>
+			Margin="59.25,13.084,-10,0" Height="20" VerticalAlignment="Top" Grid.Row="2"/>
+        <Grid Grid.Column="2" Margin="10,27.417,27.25,-33.084" Grid.Row="1">
+            <Button x:Name="button" Content="Round" Style="{DynamicResource Star}" Margin="24.667,-30,-24.667,30"/>
         </Grid>
         <Button x:Name="button1" Content="Button" HorizontalAlignment="Right" Margin="0,24,-40.75,-23.5" Grid.Row="1" Style="{DynamicResource Star}" Width="84.667"/>
+        <Button x:Name="button1" Content="Forward" Margin="0,0.5,-36.083,0" Grid.Row="1" Command="{Binding ForwardChangeText}" Style="{DynamicResource Star}" HorizontalAlignment="Right" Width="84.667"/>
+        <Button x:Name="button2" Content="Upward&#xD;&#xA;" Grid.Column="1" Margin="0,35.667,10,31.667" Grid.RowSpan="2" Style="{DynamicResource ButtonStyle1}" HorizontalAlignment="Right" Width="43.332" Foreground="#FFF7CE17" Background="White"/>
+        <Button x:Name="button1_Copy" Content="Star" Margin="0,-17.833,-36.083,30.333" Grid.Row="3" Style="{DynamicResource Star}" HorizontalAlignment="Right" Width="84.667" Grid.RowSpan="2"/>
+        <Button x:Name="button1_Copy1" Content="Reverse" Margin="34.583,-17.833,10,30.333" Grid.Row="3" Style="{DynamicResource Star}" Grid.Column="2" Grid.RowSpan="2"/>
+        <Button x:Name="button3" Content="Left" HorizontalAlignment="Right" Margin="0,0,-36.083,22.833" Grid.Row="2" Style="{DynamicResource ButtonStyle2}" Width="100.583"/>
+        <Button x:Name="button4" Content="Downward" Grid.Column="1" HorizontalAlignment="Right" Margin="0,-17.833,10,26.5" Grid.Row="3" Grid.RowSpan="2" Style="{DynamicResource ButtonStyle3}" Width="36.5" Background="#FFFBFBFB" Foreground="#FF111BEE">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="button5" Content="Right" Grid.Column="2" Margin="45.916,6.167,-20.916,22.833" Grid.Row="2" Style="{DynamicResource ButtonStyle4}"/>
     </Grid>
 </Window>
