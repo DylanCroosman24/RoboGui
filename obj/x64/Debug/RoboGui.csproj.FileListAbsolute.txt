@@ -1,0 +1,8 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\x64\Debug\RoboGui.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\x64\Debug\RoboGui.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\x64\Debug\MainWindow.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\x64\Debug\Roundup.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\x64\Debug\App.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\x64\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\x64\Debug\RoboGui_MarkupCompile.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\x64\Debug\RoboGui_MarkupCompile.lref

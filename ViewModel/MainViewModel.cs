@@ -1,8 +1,12 @@
+using System;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 using RoboGui.Services;
 using System.Windows;
 using System.Windows.Input;
+using DirectShowLib;
+using System.Windows.Media;
+using WPFMediaKit.DirectShow.MediaPlayers;
 
 namespace RoboGUI.ViewModel
 {
@@ -80,6 +84,23 @@ namespace RoboGUI.ViewModel
             }
         }
 
-       
+        public string CaptureDeviceName
+        {
+            get { return getCamName(); }
+        }
+
+        // get the devices name
+        private string getCamName()
+        {
+            try
+            {
+                DsDevice webCam = DsDevice.GetDevicesOfCat(DirectShowLib.FilterCategory.VideoInputDevice)[1];
+                return webCam.Name;
+            }
+            catch (ApplicationException)
+            {
+                return null;
+            }
+        }
     }
 }

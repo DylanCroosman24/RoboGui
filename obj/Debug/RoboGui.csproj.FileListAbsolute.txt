@@ -139,3 +139,6 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\Debug\Roundup.ba
 C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\Debug\RoboGui.g.resources
 C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\Debug\RoboGui.Properties.Resources.resources
 C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\Debug\RoboGui.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\obj\Debug\RoboGui.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\WPFMediaKit.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\RoboGui\bin\Debug\DirectShowLib-2005.dll
